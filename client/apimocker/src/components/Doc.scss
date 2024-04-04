@@ -1,0 +1,85 @@
+.code-container {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: larger;
+    font-weight: 300;
+    letter-spacing: 2px;
+    overflow-x: scroll;
+    background-color: var(--code-bg);
+    color: white;
+    .code-green-line {
+        color: green;
+    }
+    .code-red-line {
+        color: rgb(201, 85, 85);
+    }
+
+    .copy-icon {
+        img {
+            display: none;
+        }
+        
+    }
+}
+.code-container:hover .copy-icon {
+    height: 30px;
+    width: 30px;
+    float: right;
+    background: gray;
+    padding: 6px;
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid black;
+    img { 
+        display: inline;
+        float: right;
+        height: 15px;
+        width: 15px;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+}
+.show-output-btn {
+    padding: 8px 0px;
+    background: transparent;
+    border: 1px solid var(--code-red);
+    width: 125px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    color: var(--code-red);
+    font-size: large;
+    
+}
+.show-output-btn:hover {
+    color: #ffff;
+    background-color: var(--code-red);
+}
+
+.api-description {
+    color: var(--font-color);
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    .info-icon{
+        height: 40px;
+        width: 40px;
+    }
+
+}
+.c-code {
+    display: block;
+}
+.url-link{
+    text-decoration: underline;
+    float: right;
+    margin: 17px 20px 0px 0px;
+}
+
+
+
