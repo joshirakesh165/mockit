@@ -30,8 +30,6 @@ app.listen(SERVICE_PORT, () => {
 try {
   app.use('/api/v1/', defaultRouter);
   app.use(express.static('client/dist'));
-  app.use('/', (req, res) => res.sendFile('index.html', { root: "client/dist" }));
-
 } catch (err) {
   console.log('error');
 }
